@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("/Img/back1.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 2% 3%; 
+    overflow: hidden;
+    position: relative;
+}
+
+.logo{
+    width: 45px;
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgba(153, 50, 204, 0.801);
+
+    cursor: pointer;
+}
+.login-btn{
+    text-decoration: none;
+    color: rgba(153, 50, 204, 0.801);
+
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 35px;
+    background-color: rgba(214, 21, 117, 0.187);
+    border-radius: 30px;
+    border-top-right-radius: 0px;
+    transition: 0.5s;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.content{
+margin-top: 10%;
+max-width: 600px;
+}
+.container h1{
+    font-size:65px ;
+    color: rgba(153, 50, 204, 0.801);
+
+}
+.content p{
+    margin: 10px 0 30px;
+    color: rgb(70, 42, 7);
+}
+
+.content .btn{
+    padding: 10px 60px;
+    font-size: 15px;
+    font-weight: bold;
+    animation-delay: 0.5s;
+}
+.btn:hover{
+    border-top-right-radius: 30px;
+    animation-delay: 0.5s;
+}
+
+.img{
+    width: 25vw;
+    position: absolute;
+   bottom: 45px;
+    right: 5%;
+}
+
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+
+    100%{
+        opacity: 1;
+        transform: translateY(30px);
+    }
+    
+}
